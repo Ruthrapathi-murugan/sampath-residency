@@ -5,7 +5,8 @@ import HomePage from '../src/components/HomePage';
 import Footer from '../src/components/Footer';
 import RoomsPage from '../src/components/RoomsPage'; // Create this page
 import AboutPage from '../src/components/AboutPage'; // Create this page
-import ContactPage from '../src/components/ContactPage';; // Create this page
+import ContactPage from '../src/components/ContactPage'; // Create this page
+import BookingPage from '../src/components/BookingPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/rooms" element={<RoomsPage />} />  {/* Rooms Page */}
         <Route path="/about" element={<AboutPage />} />  {/* About Us Page */}
         <Route path="/contact" element={<ContactPage />} />  {/* Contact Us Page */}
+        <Route path="/booking" element={<BookingPage />} />
       </Routes>
       <Footer />
     </Router>

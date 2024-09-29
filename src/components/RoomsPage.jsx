@@ -1,11 +1,13 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-
+import { useNavigate } from 'react-router-dom';
 
 const RoomsPage = () => {
+  const navigate = useNavigate();
+
   const rooms = [
     {
-      title: 'Deluxe Double  Room',
+      title: 'Deluxe Double Room',
       description: 'Spacious room with king-size bed, balcony view, and premium amenities.',
       image: '/images/2bed (2).jpg',
       price: '₹1600/night'
@@ -30,6 +32,11 @@ const RoomsPage = () => {
     },
   ];
 
+  const handleBooking = (room) => {
+    // Pass room data to booking page
+    navigate('/booking', { state: { room } });
+  };
+
   return (
     <Container className="mt-5">
       <Row className="text-center mb-4">
@@ -48,7 +55,7 @@ const RoomsPage = () => {
                 <Card.Title>{room.title}</Card.Title>
                 <Card.Text>{room.description}</Card.Text>
                 <p className="font-weight-bold">{room.price}</p>
-                <Button variant="primary" href="/booking">Book Now</Button>
+                <Button variant="primary" onClick={() => handleBooking(room)}>Book Now</Button>
               </Card.Body>
             </Card>
           </Col>
