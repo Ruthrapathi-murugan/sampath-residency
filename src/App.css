@@ -49,4 +49,27 @@
     margin-top: 20px;
     color: #343a40;
   }
+  .navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-item {
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    color: #ffcc00; /* Highlight color on hover */
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem; /* Increase brand font size */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.3rem; /* Adjust font size for small screens */
+    }
+  }
   
