@@ -21,4 +21,32 @@
     font-size: 1.2rem;
     color: #6c757d;
   }
+  .card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .table {
+    background-color: #f8f9fa;
+  }
+  
+  .table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .table td {
+    vertical-align: middle;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    color: #343a40;
+  }
   

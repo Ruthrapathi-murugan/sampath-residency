@@ -7,6 +7,7 @@ import RoomsPage from '../src/components/RoomsPage'; // Create this page
 import AboutPage from '../src/components/AboutPage'; // Create this page
 import ContactPage from '../src/components/ContactPage'; // Create this page
 import BookingPage from '../src/components/BookingPage';
+import Todo from '../src/components/Todo';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/rooms" element={<RoomsPage />} />  {/* Rooms Page */}
         <Route path="/about" element={<AboutPage />} />  {/* About Us Page */}
         <Route path="/contact" element={<ContactPage />} />  {/* Contact Us Page */}
+        <Route path="/todo" element={<Todo />} /> 
         <Route path="/booking" element={<BookingPage />} />
       </Routes>
       <Footer />
