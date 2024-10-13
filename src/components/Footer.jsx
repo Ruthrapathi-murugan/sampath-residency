@@ -19,7 +19,7 @@ const Footer = () => {
           {/* Contact Info */}
           <Col md={6}>
             <h5>Contact Us</h5>
-            <p>Email: sampathresidency@gmail.com</p>
+            <p>Email: selvamstores24@gmail.com</p>
             <p>Phone: +91 98945 74934</p>
             <p>Address: 201 Pattali Street, Idumban Kovil Itteri Rd, opp. Eswarapatta Kovil, South Anna Nagar, Palani, Tamil Nadu 624601</p>
           </Col>
