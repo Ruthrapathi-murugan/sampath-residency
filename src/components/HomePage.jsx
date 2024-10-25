@@ -9,7 +9,7 @@ const HomePage = () => {
       <Row
         className="text-center"
         style={{
-          backgroundImage: "url('/images/PHOTO-2024-07-08-12-18-39 (6).jpg')",
+          backgroundImage: "url('/images/hotelview.jpeg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "70vh",
@@ -58,7 +58,7 @@ const HomePage = () => {
       <Row className="mt-5">
         <Col md={4} className="mb-4">
           <Card className="h-100 shadow-sm" style={{ transition: 'transform 0.3s ease-in-out' }}>
-            <Card.Img variant="top" src="/images/PHOTO-2024-07-08-12-18-39 (6).jpg" />
+            <Card.Img variant="top" src="/images/2bed (3).jpg" />
             <Card.Body>
               <Card.Title>Luxury Rooms</Card.Title>
               <Card.Text>
@@ -71,7 +71,7 @@ const HomePage = () => {
 
         <Col md={4} className="mb-4">
           <Card className="h-100 shadow-sm" style={{ transition: 'transform 0.3s ease-in-out' }}>
-            <Card.Img variant="top" src="/images/PHOTO-2024-07-08-12-18-39 (7).jpg" />
+            <Card.Img variant="top" src="/images/offer.jpg" />
             <Card.Body>
               <Card.Title>Exclusive Offers</Card.Title>
               <Card.Text>
@@ -84,13 +84,13 @@ const HomePage = () => {
 
         <Col md={4} className="mb-4">
           <Card className="h-100 shadow-sm" style={{ transition: 'transform 0.3s ease-in-out' }}>
-            <Card.Img variant="top" src="/images/PHOTO-2024-07-08-12-18-39 (7).jpg" />
+            <Card.Img variant="top" src="/images/dining.jpg" />
             <Card.Body>
               <Card.Title>Dining & Services</Card.Title>
               <Card.Text>
                 Experience the finest dining and hospitality services.
               </Card.Text>
-              <Button variant="primary" as={Link} to="/services">View Services</Button>
+              <Button variant="primary" as={Link} to="/dining">View Services</Button>
             </Card.Body>
           </Card>
         </Col>

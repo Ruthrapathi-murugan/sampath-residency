@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Table, Card } from 'react-bootstrap';
+import '../App.css'; // Ensure you have the correct path
 
 const Todo = () => {
   return (
@@ -78,7 +79,7 @@ const Todo = () => {
         <Col>
           <h2 className="text-center">Festivals</h2>
           <Card className="mt-3">
-            <Card.Img variant="top" src="https://example.com/kandhar-shasti.jpg" />
+            <Card.Img variant="top" src="/images/kandhar-shasti.jpg" className="card-img-top" />
             <Card.Body>
               <Card.Title>Kandhar Shasti (Soora Samharam)</Card.Title>
               <Card.Text>
@@ -88,7 +89,7 @@ const Todo = () => {
           </Card>
 
           <Card className="mt-3">
-            <Card.Img variant="top" src="https://example.com/thirukarthigai.jpg" />
+            <Card.Img variant="top" src="/images/karthigai.jpg" className="card-img-top" />
             <Card.Body>
               <Card.Title>Thirukarthigai</Card.Title>
               <Card.Text>
@@ -98,7 +99,7 @@ const Todo = () => {
           </Card>
 
           <Card className="mt-3">
-            <Card.Img variant="top" src="https://example.com/thai-poosam.jpg" />
+            <Card.Img variant="top" src="/images/thaipoosam.jpg" className="card-img-top" />
             <Card.Body>
               <Card.Title>Thai Poosam</Card.Title>
               <Card.Text>
@@ -108,7 +109,7 @@ const Todo = () => {
           </Card>
 
           <Card className="mt-3">
-            <Card.Img variant="top" src="https://example.com/panguni-uthiram.jpg" />
+            <Card.Img variant="top" src="/images/panguni.jpg" className="card-img-top" />
             <Card.Body>
               <Card.Title>Panguni Uthiram</Card.Title>
               <Card.Text>
@@ -118,7 +119,7 @@ const Todo = () => {
           </Card>
 
           <Card className="mt-3">
-            <Card.Img variant="top" src="https://example.com/chariot-procession.jpg" />
+            <Card.Img variant="top" src="/images/golden.jpeg" className="card-img-top" />
             <Card.Body>
               <Card.Title>Chariot Procession</Card.Title>
               <Card.Text>
@@ -134,7 +135,7 @@ const Todo = () => {
         <Col>
           <h2 className="text-center">Places Around Palani</h2>
           <Card className="mt-3">
-            <Card.Img variant="top" src="https://example.com/varathamanathi-dam.jpg" />
+            <Card.Img variant="top" src="/images/varatha.jpeg" className="card-img-top" />
             <Card.Body>
               <Card.Title>Varathamanathi Dam</Card.Title>
               <Card.Text>
@@ -144,7 +145,7 @@ const Todo = () => {
           </Card>
 
           <Card className="mt-3">
-            <Card.Img variant="top" src="https://example.com/palar-dam.jpg" />
+            <Card.Img variant="top" src="/images/palar.jpeg" className="card-img-top" />
             <Card.Body>
               <Card.Title>Palar Porundalar Dam</Card.Title>
               <Card.Text>
@@ -154,7 +155,7 @@ const Todo = () => {
           </Card>
 
           <Card className="mt-3">
-            <Card.Img variant="top" src="https://example.com/aivar-malai.jpg" />
+            <Card.Img variant="top" src="/images/aivar.jpg" className="card-img-top" />
             <Card.Body>
               <Card.Title>Aivar Malai</Card.Title>
               <Card.Text>

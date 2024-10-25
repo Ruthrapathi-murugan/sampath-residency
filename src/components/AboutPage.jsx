@@ -18,7 +18,7 @@ const AboutPage = () => {
       <Row className="align-items-center mb-5">
         <Col md={6}>
           {/* Replace with an original image related to your hotel interior */}
-          <Image src="/images/hotel-interior.jpg" fluid style={{ borderRadius: '10px' }} />
+          <Image src="/images/hotelview.jpeg" fluid style={{ borderRadius: '10px' }} />
         </Col>
         <Col md={6}>
           <h3 style={{ fontSize: '2rem', fontWeight: 'bold' }}>Our Story</h3>
@@ -35,7 +35,7 @@ const AboutPage = () => {
       <Row className="align-items-center mb-5">
         <Col md={6} className="order-md-2">
           {/* Replace with an original image showcasing a luxury room */}
-          <Image src="/images/luxury-room.jpg" fluid style={{ borderRadius: '10px' }} />
+          <Image src="/images/templeview.jpeg" fluid style={{ borderRadius: '10px' }} />
         </Col>
         <Col md={6} className="order-md-1">
           <h3 style={{ fontSize: '2rem', fontWeight: 'bold' }}>Our Vision</h3>
@@ -52,7 +52,7 @@ const AboutPage = () => {
       <Row className="align-items-center mb-5">
         <Col md={6}>
           {/* Replace with an original image that highlights hospitality */}
-          <Image src="/images/hotel-service.jpg" fluid style={{ borderRadius: '10px' }} />
+          <Image src="/images/karthigai.jpg" fluid style={{ borderRadius: '10px' }} />
         </Col>
         <Col md={6}>
           <h3 style={{ fontSize: '2rem', fontWeight: 'bold' }}>Our Mission</h3>
@@ -78,7 +78,7 @@ const AboutPage = () => {
         </Col>
         <Col md={6}>
           {/* Replace with an original image related to hotel amenities */}
-          <Image src="/images/amenities.jpg" fluid style={{ borderRadius: '10px' }} />
+          <Image src="/images/golden.jpeg" fluid style={{ borderRadius: '10px' }} />
         </Col>
       </Row>
     </Container>

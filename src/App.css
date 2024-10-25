@@ -11,6 +11,12 @@
     font-weight: bold;
     color: #343a40;
   }
+  /* styles.css */
+.card-img-top {
+  height: 400px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+}
+
   
   h3 {
     font-size: 1.75rem;

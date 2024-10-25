@@ -10,7 +10,7 @@ import BookingPage from '../src/components/BookingPage';
 import Todo from '../src/components/Todo';
 import Offers from '../src/components/Offers';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Dining from './components/Dining';
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <Route path="/rooms" element={<RoomsPage />} />  {/* Rooms Page */}
         <Route path="/about" element={<AboutPage />} />  {/* About Us Page */}
         <Route path="/offers" element={<Offers />} />
+        <Route path="/dining" element={<Dining />} />
         <Route path="/contact" element={<ContactPage />} />  {/* Contact Us Page */}
         <Route path="/todo" element={<Todo />} /> 
         <Route path="/booking" element={<BookingPage />} />
