@@ -1,6 +1,8 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const BookingPage = () => {
   const location = useLocation();
@@ -25,7 +27,13 @@ const BookingPage = () => {
           <Row>
             <Col md={6}>
               <Card>
-                <Card.Img variant="top" src={room.image} alt={room.title} />
+                <Carousel showThumbs={false} infiniteLoop autoPlay>
+                  {room.images.map((image, idx) => (
+                    <div key={idx}>
+                      <img src={image} alt={`${room.title} ${idx + 1}`} />
+                    </div>
+                  ))}
+                </Carousel>
                 <Card.Body>
                   <Card.Title>{room.title}</Card.Title>
                   <Card.Text>{room.description}</Card.Text>
@@ -78,7 +86,7 @@ const BookingPage = () => {
                   <Form.Control type="date" required min={today} />
                 </Form.Group>
 
-                <Button  variant="primary" type="submit" className="w-100">
+                <Button variant="primary" type="submit" className="w-100">
                   Confirm Booking
                 </Button>
               </Form>
