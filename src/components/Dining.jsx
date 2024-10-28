@@ -6,79 +6,29 @@ const Dining = () => {
     <Container className="mt-5">
       <h2 className="text-center mb-5">Dining at Our Hotel</h2>
 
-      {/* Section: Dining Options */}
-      <Row>
-        <Col md={4} className="mb-4">
-          <Card>
-            <Card.Img variant="top" src="/images/gourmet-room.jpg" />
-            <Card.Body>
-              <Card.Title>The Gourmet Room</Card.Title>
-              <Card.Text>
-                Enjoy an extensive menu featuring local and international cuisines. Perfect for breakfast, lunch, and dinner.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        <Col md={4} className="mb-4">
-          <Card>
-            <Card.Img variant="top" src="/images/alfresco-terrace.jpg" />
-            <Card.Body>
-              <Card.Title>Alfresco Terrace</Card.Title>
-              <Card.Text>
-                Dine under the stars with panoramic views, offering an array of grilled specialties. Ideal for romantic dinners.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        <Col md={4} className="mb-4">
-          <Card>
-            <Card.Img variant="top" src="/images/cafe-lounge.jpg" />
-            <Card.Body>
-              <Card.Title>The Café Lounge</Card.Title>
-              <Card.Text>
-                A cozy spot for a coffee break, featuring freshly brewed coffees, teas, pastries, and light snacks.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-
-      {/* Section: Signature Dishes */}
-      <Row className="mt-5">
-        <Col>
-          <h3 className="text-center mb-4">Signature Dishes</h3>
-          <p className="text-center">
-            Our culinary team takes pride in offering local specialties and chef's signature creations.
-          </p>
-        </Col>
-      </Row>
-
-      {/* Section: In-Room Dining */}
-      <Row className="mt-5">
+      {/* Section: In-Room Dining Service */}
+      <Row className="justify-content-center">
         <Col md={6} className="mb-4">
           <Card>
             <Card.Img variant="top" src="/images/in-room-dining.jpg" />
             <Card.Body>
               <Card.Title>In-Room Dining</Card.Title>
               <Card.Text>
-                For your convenience, enjoy 24/7 in-room dining service with a selection of menu items delivered to your room.
+                Our unique dining experience brings the flavors of the local restaurant scene straight to your room.
+                We partner with selected outside restaurants to provide a variety of meal options, delivered fresh and served for your comfort.
               </Card.Text>
             </Card.Body>
           </Card>
         </Col>
+      </Row>
 
-        <Col md={6} className="mb-4">
-          <Card>
-            <Card.Img variant="top" src="/images/private-dining.jpg" />
-            <Card.Body>
-              <Card.Title>Private Dining & Events</Card.Title>
-              <Card.Text>
-                We offer private dining and event catering with customized menus for memorable occasions.
-              </Card.Text>
-            </Card.Body>
-          </Card>
+      {/* Additional Information */}
+      <Row className="mt-4">
+        <Col className="text-center">
+          <p>
+            Whether you're craving a local specialty or an international dish, our service allows you to enjoy restaurant-quality meals without leaving the comfort of your room.
+            Let us handle the arrangements while you relax and dine in privacy.
+          </p>
         </Col>
       </Row>
     </Container>

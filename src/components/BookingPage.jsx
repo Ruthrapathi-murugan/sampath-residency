@@ -6,6 +6,9 @@ const BookingPage = () => {
   const location = useLocation();
   const { room } = location.state || {};
 
+  // Get today's date in the format required for the input field (YYYY-MM-DD)
+  const today = new Date().toISOString().split("T")[0];
+
   if (!room) {
     return (
       <Container className="text-center my-5">
@@ -67,15 +70,15 @@ const BookingPage = () => {
 
                 <Form.Group controlId="checkin" className="mb-3">
                   <Form.Label>Check-in Date</Form.Label>
-                  <Form.Control type="date" required />
+                  <Form.Control type="date" required min={today} />
                 </Form.Group>
 
                 <Form.Group controlId="checkout" className="mb-3">
                   <Form.Label>Check-out Date</Form.Label>
-                  <Form.Control type="date" required />
+                  <Form.Control type="date" required min={today} />
                 </Form.Group>
 
-                <Button variant="primary" type="submit" className="w-100">
+                <Button  variant="primary" type="submit" className="w-100">
                   Confirm Booking
                 </Button>
               </Form>
