@@ -19,7 +19,7 @@ const ContactPage = () => {
       e.preventDefault();
   
       try {
-          const res = await axios.post('http://localhost:5000/api/contact', formData); // Direct URL
+          const res = await axios.post('https://sampath-backend.onrender.com/api/contact', formData); // Direct URL
           if (res.status === 200) {
               setAlert({ type: 'success', message: 'Your message has been sent!' });
               setFormData({ name: '', email: '', message: '' });
